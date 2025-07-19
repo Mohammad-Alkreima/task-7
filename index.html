@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="titles">
+            <h1>Products</h1>
+            <a href="./admin.html">Go To Control Panel</a>
+        </div>
+        <form class="filters">
+            <div>
+                <input type="text" id="searchInput" placeholder="Search by name">
+
+                <select id="category">
+                    <option value="all">all</option>
+                </select>
+
+                <select id="priceFilter">
+                    <option value="default">sort by price</option>
+                    <option value="asc">asc</option>
+                    <option value="desc">desc</option>
+                </select>
+            </div>
+
+            <input type="submit" value="filter">
+        </form>
+
+        <div class="slider">
+            <button id="prevBtn"><i class="fa-solid fa-arrow-left"></i></button>
+            
+            <div id="productsSlider" class="productsContainer"></div>
+
+            <button id="nextBtn"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+    <script src="./assets/js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+</body>
+</html>

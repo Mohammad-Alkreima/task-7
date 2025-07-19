@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.conatiner {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin: 0 auto;
+    .titles {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1 {
+            text-align: center;
+            padding: 50px 0;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            background-color: blue;
+            width: fit-content;
+            padding: 16px 8px;
+            margin-bottom: 16px;
+            border-radius: 12px;
+            }
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        div {
+            margin-bottom: 24px;
+            input {
+                border-radius: 8px;
+                outline: none;
+                width: 250px;
+                padding: 8px 16px;
+                margin-left: 32px;
+            }
+        }
+
+        input#add {
+            background-color: black;
+            outline: none;
+            border: navajowhite;
+            padding: 8px 16px;
+            border-radius: 8px;
+            color: white;
+            font-weight: bold;
+            margin-bottom: 24px;
+        }
+    
+    }
+    table {
+        width: 100%;
+        border: 2px solid #eee;
+        padding: 16px;
+        caption {
+            background-color: antiquewhite;
+            padding: 16px;
+        }
+        thead {
+            tr {
+                th {
+
+                }
+            }
+        }
+        tbody {
+            tr {
+                background-color: blanchedalmond;
+                td {
+                    text-align: center;
+                    button {
+                        width: 60px;
+                        height: 30px;
+                        border: navajowhite;
+                        background-color: black;
+                        color: white;
+                        margin-right: 8px;
+                        border-radius: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
