@@ -6,7 +6,6 @@ const contaienr = document.querySelector(`.productsContainer`)
 
 
 let products = JSON.parse(localStorage.getItem("products")) || []
-// let filteredProducts = [...products]
 
 const read = (list) => {
     contaienr.innerHTML = ""
@@ -39,7 +38,6 @@ form.addEventListener("submit", (event) => {
             return product.name.toLowerCase().includes(search)
         })
     }
-    // console.log(result)
     read(result)
     // by category
     const seclectCategory = category.value
@@ -72,16 +70,12 @@ const prevBtn = document.querySelector("#prevBtn")
 const nextBtn = document.querySelector("#nextBtn")
 
 prevBtn.addEventListener("click", () => {
-    // productsSlider.scrollBy({ left: -300, behavior: "smooth" });
     const card = document.querySelector(".card");
-    // console.log(card)
-    const scrollAmount = card ? card.offsetWidth + 20 : 220; // 20 = margin (gap)
-    // console.log(scrollAmount)
+    const scrollAmount = card ? card.offsetWidth + 20 : 220;
     productsSlider.scrollBy({ left: -scrollAmount, behavior: "smooth" });
 });
 
 nextBtn.addEventListener("click", () => {
-    // productsSlider.scrollBy({ left: 300, behavior: "smooth" });
     const card = document.querySelector(".card");
     const scrollAmount = card ? card.offsetWidth + 20 : 220;
     productsSlider.scrollBy({ left: scrollAmount, behavior: "smooth" });

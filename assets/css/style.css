@@ -10,8 +10,6 @@
     width: 80vw;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
     margin: 0 auto;
     .titles {
         display: flex;
@@ -69,13 +67,6 @@
         caption {
             background-color: antiquewhite;
             padding: 16px;
-        }
-        thead {
-            tr {
-                th {
-
-                }
-            }
         }
         tbody {
             tr {

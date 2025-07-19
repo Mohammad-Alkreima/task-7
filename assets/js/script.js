@@ -9,17 +9,6 @@ const container = document.querySelector("table tbody")
 let products = JSON.parse(localStorage.getItem("products")) || []
 let lastId = parseInt(localStorage.getItem("lastId")) || 0
 
-// let products = [
-//     {
-//         id: 1,
-//         name: "lap",
-//         price: 600,
-//         category: "electron",
-//         img: "https://www.google.com/imgres?q=laptop&imgurl=https%3A%2F%2Fcdn.mos.cms.futurecdn.net%2FFUi2wwNdyFSwShZZ7LaqWf.jpg&imgrefurl=https%3A%2F%2Fwww.laptopmag.com%2F&docid=wAIrzWMvoE4prM&tbnid=wiokq4QMAfZieM&vet=12ahUKEwiBvIDjybmOAxUbVKQEHTFiPLIQM3oECDkQAA..i&w=3510&h=1974&hcb=2&ved=2ahUKEwiBvIDjybmOAxUbVKQEHTFiPLIQM3oECDkQAA"
-//     }
-// ]
-
-// let lastId = products[products.length-1]?.id || 0
 const read = () => {
     container.innerHTML = ""
     products.forEach((product) => {
