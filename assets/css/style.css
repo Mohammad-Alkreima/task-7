@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-
-
 .conatiner {
     width: 80vw;
     display: flex;
@@ -61,16 +59,22 @@
     
     }
     table {
-        width: 100%;
-        border: 2px solid #eee;
-        padding: 16px;
+        /* width: 100%; */
+        /* border: 2px solid #eee; */
+        /* padding: 16px; */
         caption {
             background-color: antiquewhite;
             padding: 16px;
         }
+        thead {
+            th {
+                padding: 24px;
+                background-color: rgb(237, 88, 38);
+            }
+        }
         tbody {
             tr {
-                background-color: blanchedalmond;
+                background-color: rgb(236, 119, 56);
                 td {
                     text-align: center;
                     button {
@@ -81,6 +85,33 @@
                         color: white;
                         margin-right: 8px;
                         border-radius: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .conatiner {
+        .titles {
+            flex-direction: column;
+            h1 {
+                padding: 24px 0;
+            }
+        }
+        div {
+            input {
+                margin-bottom: 12px;
+            }
+        }
+        table {
+            tbody {
+                tr {
+                    td {
+                        button {
+                            margin-bottom: 8px;
+                        }
                     }
                 }
             }
